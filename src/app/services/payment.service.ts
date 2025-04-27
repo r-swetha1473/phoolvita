@@ -1,0 +1,63 @@
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PaymentService {
+  constructor() {}
+  
+  // PhonePe integration simulation
+  initiatePhonePePayment(amount: number, orderId: string): Observable<any> {
+    // In a real implementation, this would make a server call to generate payment link
+    return of({
+      success: true,
+      paymentUrl: `https://phonepe.com/pay/dummy?amount=${amount}&orderId=${orderId}`,
+      merchantTransactionId: `TXN_${Date.now()}`
+    });
+  }
+  
+  // Verify payment status
+  verifyPaymentStatus(transactionId: string): Observable<any> {
+    // In a real implementation, this would make a server call to check payment status
+    return of({
+      status: 'SUCCESS',
+      transactionId: transactionId,
+      amount: 480.00
+    });
+  }
+  
+  // Process cash on delivery
+  processCashOnDelivery(orderData: any): Observable<any> {
+    return of({
+      success: true,
+      orderNumber: `ORD${Math.floor(Math.random() * 10000)}`,
+      message: 'Your cash on delivery order has been placed successfully.'
+    });
+  }
+}
+// import { HttpClient } from '@angular/common/http';
+// import { Injectable } from '@angular/core';
+// import { Observable } from 'rxjs';
+
+// @Injectable({
+//   providedIn: 'root'
+// })
+// export class PaymentService {
+
+//   constructor(private http: HttpClient) {}
+
+
+//   initiatePhonePePayment(amount: number, orderId: string): Observable<any> {
+//     const payload = { amount, orderId };
+//     return this.http.post('http://localhost:3000/api/initiate-payment', payload);
+//   }
+
+  
+//   verifyPaymentStatus(transactionId: string): Observable<any> {
+//     return this.http.post('http://localhost:3000/api/verify-payment', { transactionId });
+//   }
+//   processCashOnDelivery(orderData: any): Observable<any> {
+//     return this.http.post('/api/cash-on-delivery', orderData);
+//   }
+// }
