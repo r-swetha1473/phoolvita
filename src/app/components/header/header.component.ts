@@ -15,8 +15,8 @@ import { WishlistService } from '../../services/wishlist.service';
         <div class="header-content">
           <div class="logo">
             <a routerLink="/">
-              <img src="https://i.ibb.co/4Yb2czP/fitbytes-logo.png" alt="FitBytes Logo" />
-              <span>FITBYTES</span>
+              <img src="https://i.ibb.co/4Yb2czP/PhoolVita-logo.png" alt="PhoolVita Logo" />
+              <span>PhoolVita</span>
             </a>
           </div>
           

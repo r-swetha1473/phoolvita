@@ -25,7 +25,7 @@ import { CommonModule } from '@angular/common';
               <path d="M0 0h24v24H0z" fill="none"/>
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
-            <a href="mailto:business@fitbytes.in">businessitbytes.in</a>
+            <a href="mailto:business@PhoolVita.in">businessitbytes.in</a>
           </div>
           <div class="info-item">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -63,8 +63,8 @@ import { CommonModule } from '@angular/common';
     <div class="container">
       <div class="logo-section">
         <a routerLink="/" class="footer-logo">
-          <img src="https://i.ibb.co/cXy9Xz7/fitbytes-logo.png" alt="FitBytes Logo">
-          <span>FITBYTES</span>
+          <img src="https://i.ibb.co/cXy9Xz7/PhoolVita-logo.png" alt="PhoolVita Logo">
+          <span>PhoolVita</span>
         </a>
       </div>
       
@@ -99,7 +99,7 @@ import { CommonModule } from '@angular/common';
   
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; {{currentYear}} Fitbytes. All Rights Reserved.</p>
+      <p>&copy; {{currentYear}} PhoolVita. All Rights Reserved.</p>
       <div class="footer-links">
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy & Cookie Policy</a>
@@ -389,7 +389,7 @@ export class FooterComponent {
       new (window as any).google.maps.Marker({
         position: location,
         map: map,
-        title: 'FitBytes'
+        title: 'PhoolVita'
       });
     }
   }

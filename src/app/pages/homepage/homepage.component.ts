@@ -13,7 +13,7 @@ import { ProductCardComponent } from '../../components/product-card/product-card
     <div class="hero-section">
       <div class="container">
         <div class="hero-content">
-          <h1>Fit Bytes</h1>
+          <h1>PhoolVita</h1>
           <p>Premium Quality Makhana & Dried Fruits</p>
           <a routerLink="/shop" class="btn btn-accent">SHOP NOW</a>
         </div>
@@ -80,7 +80,7 @@ import { ProductCardComponent } from '../../components/product-card/product-card
           <h1>The<br>Makhana</h1>
         </div>
         <div class="info-text-right">
-          <p><strong>Fit Bytes</strong> – Bringing you the finest quality Makhana directly from the heart of Bihar, India. Our premium, healthy snacks are carefully sourced to retain their natural goodness, ensuring every bite is packed with essential nutrients and delicious flavor. At Fit Bytes, we take pride in delivering farm-fresh Makhana, crafted with care to support your health and wellness journey. Whether you’re looking for a guilt-free snack or a superfood to energize your day, Fit Bytes is your trusted partner for wholesome, nutritious treats. Eat healthy, stay fit with Fit Bytes!</p>
+          <p><strong>PhoolVita</strong> – Bringing you the finest quality Makhana directly from the heart of Bihar, India. Our premium, healthy snacks are carefully sourced to retain their natural goodness, ensuring every bite is packed with essential nutrients and delicious flavor. At PhoolVita, we take pride in delivering farm-fresh Makhana, crafted with care to support your health and wellness journey. Whether you’re looking for a guilt-free snack or a superfood to energize your day, PhoolVita is your trusted partner for wholesome, nutritious treats. Eat healthy, stay fit with PhoolVita!</p>
           <a href="/shop" class="btn-learn-more">LEARN MORE</a>
         </div>
       </section>
@@ -126,7 +126,7 @@ import { ProductCardComponent } from '../../components/product-card/product-card
       <section class="join-section">
         <h2  class="section-title">Join Our CSA</h2>
         <p>
-          Phool Makhana (Fox Nuts) have always been a traditional favorite in many households in India. FitBytes is dedicated to bringing the nutritional goodness of these little powerhouses straight to your homes. We ensure you receive only the best quality Makhana, sourced directly from farms and processed under strict quality control.
+          Phool Makhana (Fox Nuts) have always been a traditional favorite in many households in India. PhoolVita is dedicated to bringing the nutritional goodness of these little powerhouses straight to your homes. We ensure you receive only the best quality Makhana, sourced directly from farms and processed under strict quality control.
         </p>
         <a routerLink="/contact" class="btn btn-primary">CONTACT US</a>
       </section>

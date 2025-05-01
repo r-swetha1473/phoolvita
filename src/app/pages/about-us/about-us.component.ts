@@ -23,7 +23,7 @@ import { RouterLink } from '@angular/router';
           <div class="about-text">
             <h2>Our Story</h2>
             <p>
-              FitBytes was founded with a simple mission: to provide premium quality Makhana (Fox Nuts) to health-conscious consumers. We started our journey in 2023 when we realized that despite its incredible nutritional benefits, quality Makhana was hard to find in the market.
+              PhoolVita was founded with a simple mission: to provide premium quality Makhana (Fox Nuts) to health-conscious consumers. We started our journey in 2023 when we realized that despite its incredible nutritional benefits, quality Makhana was hard to find in the market.
             </p>
             
             <p>
@@ -31,12 +31,12 @@ import { RouterLink } from '@angular/router';
             </p>
             
             <p>
-              Today, FitBytes is proud to offer a range of both plain and flavored Makhana, processed and packaged with care to preserve their nutritional integrity and deliver a superior snacking experience to our customers.
+              Today, PhoolVita is proud to offer a range of both plain and flavored Makhana, processed and packaged with care to preserve their nutritional integrity and deliver a superior snacking experience to our customers.
             </p>
             
             <h2>Our Quality Promise</h2>
             <p>
-              At FitBytes, quality is not just a promise but a commitment. We ensure that our Makhana goes through rigorous quality checks before reaching your doorstep. Our products are:
+              At PhoolVita, quality is not just a promise but a commitment. We ensure that our Makhana goes through rigorous quality checks before reaching your doorstep. Our products are:
             </p>
             
             <ul>
@@ -47,7 +47,7 @@ import { RouterLink } from '@angular/router';
               <li>Rich in protein, calcium, and other essential nutrients</li>
             </ul>
             
-            <h2>Why Choose FitBytes?</h2>
+            <h2>Why Choose PhoolVita?</h2>
             <div class="features-grid">
               <div class="feature-card">
                 <i class="fas fa-leaf"></i>
@@ -75,7 +75,7 @@ import { RouterLink } from '@angular/router';
             </div>
             
             <div class="cta-section">
-              <h2>Ready to experience the FitBytes difference?</h2>
+              <h2>Ready to experience the PhoolVita difference?</h2>
               <a routerLink="/shop" class="btn btn-primary">Shop Now</a>
             </div>
           </div>

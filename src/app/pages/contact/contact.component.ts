@@ -70,7 +70,7 @@ import { FormsModule } from '@angular/forms';
                 <i class="fas fa-envelope"></i>
                 <div>
                   <h4>Email</h4>
-                  <p>businessfitbytes.in</p>
+                  <p>businessPhoolVita.in</p>
                 </div>
               </div>
               
@@ -287,7 +287,7 @@ export class ContactComponent {
       new (window as any).google.maps.Marker({
         position: location,
         map: map,
-        title: 'FitBytes'
+        title: 'PhoolVita'
       });
     }
   }

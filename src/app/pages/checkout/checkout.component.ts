@@ -469,21 +469,29 @@ export class CheckoutComponent implements OnInit {
       billingDetails: this.billingDetails,
       items: this.cartItems,
       total: this.cartTotal,
-      paymentMethod: this.selectedPaymentMethod
+      paymentMethod: this.selectedPaymentMethod,
+      price: this.cartTotal, // Adding the total price
+      user_id: 'user123', // Replace with actual user ID
+      phone: this.billingDetails.phone,
+      name: `${this.billingDetails.firstName} ${this.billingDetails.lastName}`,
+      email: this.billingDetails.email,
+      tempId: `ORD${Math.floor(Math.random() * 10000)}` // Temporary order ID
     };
     
     if (this.selectedPaymentMethod === 'phonepe') {
-      this.paymentService.initiatePhonePePayment(
-        this.cartTotal,
-        `ORD${Math.floor(Math.random() * 10000)}`
-      ).subscribe(response => {
-        if (response.success) {
+      // Pass the full order data to initiatePhonePePayment
+      this.paymentService.initiatePhonePePayment(orderData).subscribe(response => {
+        if (response.status === 'success') {
           // In a real app, redirect to PhonePe payment page
           // For demo, we'll just proceed to order complete
           localStorage.setItem('order_data', JSON.stringify(orderData));
           this.cartService.clearCart();
           this.router.navigate(['/order-complete']);
+        } else {
+          console.error('Payment initiation failed');
         }
+      }, error => {
+        console.error('Payment API Error:', error);
       });
     } else {
       // Cash on delivery
@@ -499,4 +507,5 @@ export class CheckoutComponent implements OnInit {
       });
     }
   }
+  
 }
