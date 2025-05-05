@@ -1,10 +1,9 @@
-// Simple in-memory store for orders
+// models/Order.js
+
 const orders = [];
 
 module.exports = {
-    // Add a new order to the store
     addOrder: (orderData) => {
-        // Ensure that the orderData has the necessary fields
         if (!orderData.transactionId) {
             console.error("Order data must include a transactionId.");
             return;
@@ -12,17 +11,14 @@ module.exports = {
         orders.push(orderData);
     },
 
-    // Get an order by transaction ID
     getOrderByTransactionId: (transactionId) => {
-        const order = orders.find(order => order.transactionId === transactionId);
-        if (!order) {
-            console.error(`Order with transactionId ${transactionId} not found.`);
-            return null;
-        }
-        return order;
+        return orders.find(order => order.transactionId === transactionId) || null;
     },
 
-    // Update the status of an order by transaction ID
+    getOrderByTempId: (tempId) => {
+        return orders.find(order => order.tempId === tempId) || null;
+    },
+
     updateOrderStatus: (transactionId, status) => {
         const order = orders.find(order => order.transactionId === transactionId);
         if (order) {
@@ -32,12 +28,7 @@ module.exports = {
         }
     },
 
-    // Get all orders in the store
     getAllOrders: () => {
-        if (orders.length === 0) {
-            console.log("No orders found.");
-            return [];
-        }
         return orders;
     }
 };

@@ -486,7 +486,7 @@ export class CheckoutComponent implements OnInit {
           // For demo, we'll just proceed to order complete
           localStorage.setItem('order_data', JSON.stringify(orderData));
           this.cartService.clearCart();
-          this.router.navigate(['/order-complete']);
+          window.location.href = response.redirectUrl;
         } else {
           console.error('Payment initiation failed');
         }

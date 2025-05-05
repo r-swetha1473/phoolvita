@@ -15,8 +15,8 @@ import { WishlistService } from '../../services/wishlist.service';
         <div class="header-content">
           <div class="logo">
             <a routerLink="/">
-              <img src="https://i.ibb.co/4Yb2czP/PhoolVita-logo.png" alt="PhoolVita Logo" />
-              <span>PhoolVita</span>
+              <img src="assets/images/logo.jpg" alt="PhoolVita Logo" />
+              <!-- <span>PhoolVita</span> -->
             </a>
           </div>
           
@@ -210,7 +210,7 @@ import { WishlistService } from '../../services/wishlist.service';
     }
     
     .mobile-menu.open {
-      max-height: 300px;
+      max-height: 400px;
     }
     
     .mobile-menu ul {

@@ -63,8 +63,8 @@ import { CommonModule } from '@angular/common';
     <div class="container">
       <div class="logo-section">
         <a routerLink="/" class="footer-logo">
-          <img src="https://i.ibb.co/cXy9Xz7/PhoolVita-logo.png" alt="PhoolVita Logo">
-          <span>PhoolVita</span>
+          <img src="assets/images/logo.jpg" alt="PhoolVita Logo">
+          <!-- <span>PhoolVita</span> -->
         </a>
       </div>
       
@@ -193,8 +193,7 @@ import { CommonModule } from '@angular/common';
 }
 
 .footer-logo img {
-  height: 60px;
-  margin-right: 0.5rem;
+  max-width: 100px;
 }
 
 .footer-logo span {
