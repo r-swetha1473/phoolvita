@@ -7,7 +7,7 @@ import { CartItem } from '../models/cart-item.model';
   providedIn: 'root'
 })
 export class PaymentService {
-  private baseUrl = 'http://34.121.150.114/api/payment'; // Backend URL
+  private baseUrl = 'https://34.121.150.114/api/payment'; // Backend URL
 
   constructor(private http: HttpClient) {}
 
