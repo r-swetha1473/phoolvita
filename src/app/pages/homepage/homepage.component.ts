@@ -256,7 +256,7 @@ import { ProductCardComponent } from '../../components/product-card/product-card
       gap: 30px;
     }
     
-    .info-banner.no-image {
+.info-banner.no-image {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -313,7 +313,6 @@ import { ProductCardComponent } from '../../components/product-card/product-card
     font-size: 0.95rem;
   }
 }
-
 
 .btn-learn-more {
   display: inline-block;
