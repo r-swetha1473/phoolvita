@@ -7,7 +7,7 @@ import { CartItem } from '../models/cart-item.model';
   providedIn: 'root'
 })
 export class PaymentService {
-  private baseUrl = 'http://localhost:3000/api/payment'; // Backend URL
+  private baseUrl = 'https://fitbyte-backend-921210989391.us-central1.run.app/api/payment'; // Backend URL
 
   constructor(private http: HttpClient) {}
 
@@ -106,12 +106,12 @@ export class PaymentService {
 
 //   initiatePhonePePayment(amount: number, orderId: string): Observable<any> {
 //     const payload = { amount, orderId };
-//     return this.http.post('http://localhost:3000/api/initiate-payment', payload);
+//     return this.http.post('http://localhost:4200/api/initiate-payment', payload);
 //   }
 
   
 //   verifyPaymentStatus(transactionId: string): Observable<any> {
-//     return this.http.post('http://localhost:3000/api/verify-payment', { transactionId });
+//     return this.http.post('http://localhost:4200/api/verify-payment', { transactionId });
 //   }
 //   processCashOnDelivery(orderData: any): Observable<any> {
 //     return this.http.post('/api/cash-on-delivery', orderData);

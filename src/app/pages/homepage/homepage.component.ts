@@ -263,6 +263,7 @@ import { ProductCardComponent } from '../../components/product-card/product-card
   padding: 60px;
   background-color: #fdfaf6;
   font-family: 'Georgia', serif;
+  flex-wrap: wrap;
 }
 
 .info-text-left h1 {
@@ -280,6 +281,39 @@ import { ProductCardComponent } from '../../components/product-card/product-card
   color: #111;
   line-height: 1.8;
 }
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .info-banner.no-image {
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-text-left h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .info-text-right {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-banner.no-image {
+    padding: 30px 20px;
+  }
+
+  .info-text-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .info-text-right {
+    font-size: 0.95rem;
+  }
+}
+
 
 .btn-learn-more {
   display: inline-block;
